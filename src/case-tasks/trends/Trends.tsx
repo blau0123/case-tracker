@@ -1,10 +1,15 @@
 import React from 'react';
 import '../../App.scss';
+import { CaseTaskListData } from '../../types/types';
 import './Trends.css';
 
-function Trends() {
-    const numberOfCases = 12;
-    const numberOfDefects = 5;
+function Trends(props:CaseTaskListData) {
+    const {data: caseTaskData} = props;
+    if (!caseTaskData)
+        return null;
+
+    const numberOfCases = caseTaskData.filter(caseTask => caseTask.redirected_team)?.length;
+    const numberOfDefects = caseTaskData.filter(caseTask => caseTask.defect_created)?.length;
 
     return (
         <div>
