@@ -1,0 +1,47 @@
+.app-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+/*CSS for elements that should look like a card*/
+.card.light {
+    background-color: #303030;
+}
+
+.card.dark {
+    background-color: #1E1E1E;
+}
+
+.card {
+    border-radius: 1rem;
+    padding: 2rem;
+    color: white;
+}
+
+/*CSS for text inputs*/
+.text-input {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    outline: none;
+    border: none;
+}
+
+.cstrack-button.secondary {
+    background-color: #303030;
+    color: white;
+}
+
+.cstrack-button.primary {
+    background-color: #81AF7D;
+    color: white;
+}
+
+.cstrack-button {
+    padding: 1rem 3rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 4px 4px gray;
+}

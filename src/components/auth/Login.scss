@@ -1,0 +1,43 @@
+#login-container {
+    height: 100vh;
+    width: 100%;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+
+    #login-section {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        #login-input-container {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 1rem;
+        }
+
+        .cstrack-button {
+            margin-top: 1rem;
+            width: 25%;
+        }
+    }
+
+    #signup-init-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #81AF7D;
+        padding: 3rem;
+    }
+}
+
+.login-title {
+    font-weight:normal;
+    font-size: 2rem;
+}
